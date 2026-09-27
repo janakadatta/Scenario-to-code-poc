@@ -1,0 +1,17 @@
+[project]
+name = "mcp-jira-langchain"
+version = "0.1.0"
+description = "POC: LangChain/LangGraph agent that reads Jira acceptance criteria and Confluence coding standards via MCP, and generates backend code"
+requires-python = ">=3.11"
+dependencies = [
+    "mcp>=1.0.0",
+    "langchain-mcp-adapters",
+    "langchain",
+    "langchain-google-genai",
+    "python-dotenv",
+    "pymupdf",
+    "python-docx",
+]
+
+[tool.uv]
+package = false
